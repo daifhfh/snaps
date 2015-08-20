@@ -1,0 +1,13 @@
+name: capes
+vendor: Erle Robotics <contact@erlerobot.com>
+icon: meta/erle-small.png
+version: 1.2
+architecture: armhf
+type: framework
+services:
+     - name: load-capes
+       start: src/load-capes.sh
+       description: Load PXF cape
+       security-policy:
+          apparmor: meta/load-capes.profile
+          seccomp: meta/load-capes.seccomp

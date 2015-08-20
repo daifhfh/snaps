@@ -1,0 +1,17 @@
+name: erle_oem
+vendor: Erle Robotics <contact@erlerobot.com>
+icon: meta/erle-small.png
+version: 1.0
+type: oem
+
+oem:
+    store:
+        id: mystore
+    branding:
+        name: Erle Robotics 
+        logo: erle-supersmall.png
+    hardware:
+        platform: erle-brain
+        architecture: armhf
+        partition-layout: system-AB
+        bootloader: u-boot

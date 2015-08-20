@@ -1,0 +1,14 @@
+name: apm-rover-erle
+source: http://github.com/erlerobot/
+vendor: Victor Mayoral Vilches <victor@erlerobot.com>
+version: 1.4
+architecture: [amd64, armhf]
+frameworks: [capes]
+services:
+    - name: apm
+      start: apm.sh
+      poststop: apm.sh
+      description: APM:Rover autopilot
+      security-policy:
+          apparmor: meta/apm.profile
+          seccomp: meta/apm.seccomp
