@@ -1,0 +1,29 @@
+name: snapcamera
+version: 1.0
+vendor: Number Five <number-five@is-alive.com>
+summary: Stream video through youtube
+icon: icon.svg
+type: framework
+description: Stream video through youtube
+
+#binaries:
+#  - name: urs/bin/raspivid
+#    description: "raspberry pi camera"
+#  - name: usr/bin/ffmpeg
+#    description: "ffmpeg"
+
+parts:
+  integration:
+    type: copy
+    files:
+      streaming_youtube.sh: streaming_youtube.sh
+#    stage-packages:
+#      - ffmpeg
+  ffmpeg:
+    type: autotools-project
+    source: FFmpeg/
+#    configflags:
+#      - 
+  vc:
+    type: cmake-project
+    source: rpi-userland/

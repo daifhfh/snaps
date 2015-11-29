@@ -1,0 +1,9 @@
+architectures:
+- armhf
+icon: meta/icon.svg
+name: snapcamera
+services:
+- name: snapcamera
+  start: streaming_youtube.sh.wrapper
+vendor: Number Five <number-five@is-alive.com>
+version: 1.0

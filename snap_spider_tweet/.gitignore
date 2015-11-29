@@ -1,0 +1,5 @@
+*.snap
+stage/
+snap/
+build/
+parts/
